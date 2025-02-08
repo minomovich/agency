@@ -162,6 +162,7 @@ header {
 
     &__more {
         margin-top: 20px;
+
         &__box {
             width: 80%;
             margin: 0 auto 35px auto;
@@ -169,10 +170,12 @@ header {
             border: solid 1px rgb(198, 198, 198);
             border-radius: 30px;
             padding: 52px 81px;
-            &:hover{
+
+            &:hover {
                 box-shadow: 4px 4px 30px 0px #0000001A;
                 cursor: pointer;
             }
+
             h1 {
                 font-family: $quicksand;
                 font-weight: 700;
@@ -181,12 +184,14 @@ header {
         }
     }
 }
-.portfolio{
-    &__button{
+
+.portfolio {
+    &__button {
         text-align: center;
         margin: 0 auto;
         text-align: center;
-        button{
+
+        button {
             font-family: $quicksand;
             font-weight: 700;
             font-size: 16px;
@@ -197,48 +202,58 @@ header {
             padding: 10px 35px;
         }
     }
-    &__title{
+
+    &__title {
         text-align: center;
         margin: 23px;
-        h4{
+
+        h4 {
             @include h4();
         }
-        h1{
+
+        h1 {
             font-weight: 700;
             font-size: 24px;
             margin: 10px 0px 34px 0px;
         }
-        p{
+
+        p {
             @include p();
         }
     }
-    .portfolios{
+
+    .portfolios {
         text-align: left;
-        div{
+
+        div {
             width: 80%;
             margin: 0 auto 50px auto;
         }
-        p{
+
+        p {
             color: white;
             font-family: $quicksand;
             font-weight: 700;
             font-size: 24px;
         }
-        .furniture{
+
+        .furniture {
             background-image: url(/img/Rectangle\ 836.png);
             background-repeat: no-repeat;
             background-size: contain;
             padding: 252px 30px 26px 24px;
 
         }
-        .cloud{
+
+        .cloud {
             background-image: url(/img/Новый\ проект.png);
             background-repeat: no-repeat;
             background-size: contain;
             padding: 252px 30px 26px 24px;
 
         }
-        .byte{
+
+        .byte {
             background-image: url(/img/Новый\ проект\ \(1\).png);
             background-repeat: no-repeat;
             background-size: contain;
@@ -247,31 +262,40 @@ header {
         }
     }
 }
-.testimonial{
-    
-    h4{
+
+.testimonial {
+
+    h4 {
         @include h4();
         text-align: center;
     }
-    h1{
+
+    h1 {
         font-weight: 700;
         font-size: 24px;
         text-align: center;
         margin-bottom: 35px;
     }
-    .talk-peopl{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        &__text{
-            h1{
+
+    .talk-peopl {
+        padding: 40px;
+        box-shadow: 0px 8px 24px 0px #0000000D;
+        &__intro {
+            display: flex;
+            align-items: center;
+        }
+
+        &__text {
+            margin-left: 30px;
+            h1 {
                 font-family: $quicksand;
                 font-weight: 600;
                 font-size: 18px;
                 color: #377DFF;
                 margin-bottom: 10px;
             }
-            p{
+
+            p {
                 font-family: $quicksand;
                 font-weight: 400;
                 font-size: 11px;
@@ -279,15 +303,18 @@ header {
                 text-align: center;
             }
         }
-    }
-    .info{
-        p{
-            font-family: $quicksand;
-            font-weight: 400;
-            font-size: 14px;
-            color: #464646;
-            width: 80%;
+
+        &__info {
+            margin-top: 35px;
+            p {
+                font-family: $quicksand;
+                font-weight: 400;
+                font-size: 14px;
+                color: #464646;
+                
+            }
         }
     }
+
 
 }
