@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", serif;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+$quicksand: "Quicksand",
+serif;
+
+@mixin h4 () {
+    font-family: $quicksand;
+    font-size: 14px;
+    font-weight: 600;
+    color: #377DFF;
+}
+
+@mixin a() {
+    text-decoration: none;
+    font-family: $quicksand;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding: 10px 35px;
+    background-color: #377DFF;
+    border-radius: 24px;
+    border: solid 2px #377DFF;
+
+    &:hover {
+        background-color: white;
+        border: solid 2px #377DFF;
+        color: #377DFF;
+    }
+}
+
+@mixin p() {
+    font-family: $quicksand;
+    font-size: 14px;
+    font-weight: 400;
+    color: #464646;
+}
+
+header {
+    padding-top: 40px;
+
+    .head-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.dream {
+    .makeDream {
+        padding-top: 70px;
+        text-align: center;
+
+        h1 {
+            font-weight: 800;
+            font-size: 28px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 14;
+            margin: 20px 0;
+        }
+
+        a {
+            @include a;
+        }
+
+        .project {
+            margin: 50px 0 100px 0;
+        }
+    }
+
+}
+
+.aboutUs {
+    padding-bottom: 100px;
+
+    .nameSection {
+        text-align: center;
+        font-family: $quicksand;
+        margin: 0;
+
+    }
+
+    h4 {
+        text-align: center;
+        @include h4();
+    }
+
+    h1 {
+
+        text-align: center;
+        font-size: 24px;
+        margin: 10px 0 35px 0;
+    }
+
+    p {
+        text-align: center;
+        @include p();
+    }
+
+    .aboutUs_button {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 35px 0 50px 0;
+    }
+
+    .aboutUs_button a {
+        @include a();
+    }
+
+    .aboutUs_img {
+        text-align: center;
+    }
+}
+
+.services {
+    h4 {
+        @include h4 ();
+        text-align: center;
+
+    }
+
+    p {
+        @include p ();
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 24px;
+        margin: 18px 0 34px 0;
+        text-align: center;
+
+
+    }
+
+    a {
+        text-decoration: none;
+        font-family: $quicksand;
+        font-size: 14px;
+        font-weight: 700;
+        color: #377DFF;
+    }
+
+    &__more {
+        margin-top: 20px;
+        &__box {
+            width: 80%;
+            margin: 0 auto 35px auto;
+            text-align: center;
+            border: solid 1px rgb(198, 198, 198);
+            border-radius: 30px;
+            padding: 52px 81px;
+            &:hover{
+                box-shadow: 4px 4px 30px 0px #0000001A;
+                cursor: pointer;
+            }
+            h1 {
+                font-family: $quicksand;
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+    }
+}
+.portfolio{
+    &__button{
+        text-align: center;
+        margin: 0 auto;
+        text-align: center;
+        button{
+            font-family: $quicksand;
+            font-weight: 700;
+            font-size: 16px;
+            background-color: white;
+            color: #377DFF;
+            border: solid #377DFF 2px;
+            border-radius: 24px;
+            padding: 10px 35px;
+        }
+    }
+    &__title{
+        text-align: center;
+        margin: 23px;
+        h4{
+            @include h4();
+        }
+        h1{
+            font-weight: 700;
+            font-size: 24px;
+            margin: 10px 0px 34px 0px;
+        }
+        p{
+            @include p();
+        }
+    }
+    .portfolios{
+        text-align: left;
+        div{
+            width: 80%;
+            margin: 0 auto 50px auto;
+        }
+        p{
+            color: white;
+            font-family: $quicksand;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        .furniture{
+            background-image: url(/img/Rectangle\ 836.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 252px 30px 26px 24px;
+
+        }
+        .cloud{
+            background-image: url(/img/Новый\ проект.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 252px 30px 26px 24px;
+
+        }
+        .byte{
+            background-image: url(/img/Новый\ проект\ \(1\).png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding: 252px 30px 26px 24px;
+
+        }
+    }
+}
+.testimonial{
+    
+    h4{
+        @include h4();
+        text-align: center;
+    }
+    h1{
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .talk-peopl{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        &__text{
+            h1{
+                font-family: $quicksand;
+                font-weight: 600;
+                font-size: 18px;
+                color: #377DFF;
+                margin-bottom: 10px;
+            }
+            p{
+                font-family: $quicksand;
+                font-weight: 400;
+                font-size: 11px;
+                color: #464646;
+                text-align: center;
+            }
+        }
+    }
+    .info{
+        p{
+            font-family: $quicksand;
+            font-weight: 400;
+            font-size: 14px;
+            color: #464646;
+            width: 80%;
+        }
+    }
+
+}
