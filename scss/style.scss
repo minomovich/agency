@@ -315,6 +315,24 @@ header {
             }
         }
     }
+    .collaboration{
+        &__text{
+            h1 {
+                font-weight: 700;
+                font-size: 28px;
+            }
+        }
+        p {
+            font-family: $quicksand;
+            font-weight: 400;
+            font-size: 14px;
+            color: #464646;
+            
+        }
+        button{
+            @include a();
+        }
+    }
 
 
 }
